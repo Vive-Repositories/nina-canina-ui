@@ -1,0 +1,84 @@
+// src/tokens/_colors.scss
+// Values extracted from the prototype markup. Counts are usages found in the
+// two .dc.html files (web + admin). See docs/token-audit.md for the long tail.
+:root {
+  // Navy — dark surfaces
+  --nc-navy: #1c2a49;          // 30
+  --nc-navy-deep: #16223d;     // 12
+  --nc-navy-mid: #24365f;      // 16
+
+  // Pink — primary brand
+  --nc-pink: #e8468d;          // 98
+  --nc-pink-dark: #c42c6e;     // 9
+  --nc-pink-bg: #fdeaf3;       // 12
+
+  // Teal — hotel
+  --nc-teal: #11b6c7;          // 44
+  --nc-teal-dark: #0e8a98;     // 7
+  --nc-teal-dark-alt: #0e93a1; // 5, README lists both shades
+  --nc-teal-bg: #e4f7f9;       // 7
+
+  // Amber — store, warnings
+  --nc-amber: #f7a610;         // 39
+  --nc-amber-dark: #c4860b;    // 21
+  --nc-amber-darker: #8a6410;  // 2, kept: distinct role as text on amber bg
+  --nc-amber-bg: #fff6e6;      // 12
+  --nc-amber-bg-soft: #fffbf2; // 2, kept: distinct softer notice background
+
+  // Green — success, WhatsApp
+  --nc-green: #199d3c;         // 53
+  --nc-green-text: #178a36;    // 15
+  --nc-green-bg: #e8f7ed;      // 19
+  --nc-green-bright: #4ed07a;  // 7, only on navy ("abierto ahora")
+
+  // Violet — "Listo" state, manual price, admin role
+  --nc-violet: #6d4ad6;        // 4
+  --nc-violet-bg: #ede9fe;     // 2, kept: paired background for the violet chip
+
+  // Text on light
+  --nc-fg: #152238;          // 174
+  --nc-fg-strong: #344056;   // 17, not in the README table but real
+  --nc-fg-secondary: #667085;// 91
+  --nc-fg-tertiary: #5c6880; // 71
+  --nc-fg-muted: #9aa4b5;    // 95
+  --nc-fg-faint: #c9d0dc;    // 7
+
+  // Text on navy
+  --nc-on-navy: #c7d0e4;         // 8
+  --nc-on-navy-muted: #9fb0ce;   // 33
+  --nc-on-navy-dim: #93a3c4;     // 2, admin sidebar inactive item
+  --nc-on-navy-faint: #5c6d93;   // 5, admin sidebar eyebrow
+  --nc-on-navy-fainter: #8394b8; // 3
+
+  // Surfaces and borders
+  --nc-white: #ffffff;          // 287
+  --nc-bg: #f7f8fb;             // 40
+  --nc-surface-subtle: #fafbfd; // 3
+  --nc-border: #e6eaf2;         // 80
+  --nc-border-soft: #eef1f6;    // 34
+  --nc-border-softer: #f2f4f8;  // 15
+  --nc-border-softest: #f4f6fa; // 4
+
+  // Translucent layers used on navy surfaces
+  --nc-border-on-navy: rgb(255 255 255 / .12); // 11
+  --nc-surface-on-navy: rgb(255 255 255 / .08); // 8
+}
+
+// Audit additions (Step 6, docs/token-audit.md): tail colors from the
+// extraction report that the block above does not cover, decided one by one
+// against the .dc.html markup. Three of these (on-navy-footer, border-strong,
+// on-navy-bright) meet the 3+ "is a token" threshold on their own; the rest
+// are semantically distinct one- or two-use values kept as their own tokens
+// rather than folded into a near neighbor. See the audit doc for the
+// per-color reasoning, including the values that were adjusted instead.
+:root {
+  --nc-on-navy-footer: #6e7e9e;      // 5, public site footer copy/links (web only)
+  --nc-border-strong: #d6dde9;       // 3, dashed decorative borders (loyalty-stamp placeholders)
+  --nc-on-navy-bright: #e4eaf5;      // 3, footer contact detail labels (phone/email/address)
+  --nc-gradient-pink-amber: #f0679f; // 2, hero banner gradient midpoint (pink → amber)
+  --nc-selected-bg: #f0fbfc;         // 2, selected chip/row highlight (teal accent)
+  --nc-amber-border-soft: #f4e2be;   // 2, border paired with --nc-amber-bg-soft (license notice box)
+  --nc-red: #e62718;                 // 1, only true red in the system — web login auth-error text
+  --nc-fg-disabled: #b6bcc8;       // 1, disabled day-selector chip text
+  --nc-amber-border-strong: #f0c97a; // 1, unassigned-carer warning border (paired with --nc-amber-bg-soft)
+}

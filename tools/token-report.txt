@@ -1,0 +1,241 @@
+
+### colors — 72 distinct
+   287  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:231 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:56  #ffffff
+   174  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:137 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:37  #152238
+    98  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:79 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:19  #e8468d
+    95  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:32 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:63  #9aa4b5
+    91  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:62 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:29  #667085
+    80  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:53 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:27  #e6eaf2
+    71  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:46 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:25  #5c6880
+    53  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:45 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:8  #199d3c
+    44  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:37 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:7  #11b6c7
+    40  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:14 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:26  #f7f8fb
+    39  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:34 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:5  #f7a610
+    34  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:14 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:20  #eef1f6
+    33  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:33 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #9fb0ce
+    30  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:28 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2  #1c2a49
+    21  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:11 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:10  #c4860b
+    19  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:9 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:10  #e8f7ed
+    17  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:17 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #344056
+    16  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:15 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1  #24365f
+    15  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:12  #178a36
+    15  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:5 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:10  #f2f4f8
+    12  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:11 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1  #16223d
+    12  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:8 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:4  #fff6e6
+    12  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:8 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:4  #fdeaf3
+     9  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:6  #c42c6e
+     8  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:7 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1  #c7d0e4
+     7  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:4 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:3  #0e8a98
+     7  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:4 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:3  #e4f7f9
+     7  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:6 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1  #4ed07a
+     7  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:6  #c9d0dc
+     5  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:5 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #0e93a1
+     5  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:5 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #6e7e9e
+     5  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:5 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  #5c6d93
+     4  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:4 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  #f4f6fa
+     4  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:4 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  #6d4ad6
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #d6dde9
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #e4eaf5
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  #8394b8
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  #fafbfd
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #e8940a
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #ebe3d8
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #f0679f
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #c9d2e2
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #f3f5f8
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #fbe7f1
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #f0fbfc
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  #93a3c4
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  #8fa0c4
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  #fffbf2
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  #f4e2be
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  #8a6410
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  #ede9fe
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #f7c8de
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #b9e9ef
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #2e4472
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #fbe3b4
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #4fd0de
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #86d93f
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #f7b84b
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #e9f8f4
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #f3d9e7
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #e9edf4
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #e62718
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #dbf6f0
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #fff1d6
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #e7f6ec
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #eef0f4
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #f3f4f7
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  #b6bcc8
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  #7a8cb0
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  #a98a45
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  #f1f4f9
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  #f0c97a
+
+### rgba — 50 distinct
+    24  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:24 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(28,42,73,.08)
+    17  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:17 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  rgba(28,42,73,.07)
+    11  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:8 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:3  rgba(255,255,255,.12)
+     8  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:5 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:3  rgba(255,255,255,.08)
+     8  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:8 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(255,255,255,.1)
+     5  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:5 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(28,42,73,.10)
+     5  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2  rgba(255,255,255,.06)
+     4  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:4 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(28,42,73,.06)
+     4  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:4 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(28,42,73,.1)
+     4  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:4 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  rgba(21,34,56,.3)
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(255,255,255,.16)
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(255,255,255,0.05)
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(255,255,255,0.28)
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(0,0,0,.35)
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(255,255,255,.18)
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(0,0,0,.4)
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(255,255,255,.14)
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(255,255,255,.05)
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  rgba(21,34,56,.55)
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(28,42,73,.09)
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(28,42,73,.14)
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(17,182,199,.12)
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(232,70,141,.16)
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(247,166,16,.16)
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(255,255,255,.92)
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(11,20,38,.6)
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(0,0,0,.25)
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  rgba(255,255,255,.07)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(255,255,255,.10)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(255,255,255,0)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(28,42,73,.05)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(28,42,73,.12)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(232,70,141,.1)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(247,166,16,.14)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(247,166,16,.35)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(255,255,255,.9)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(255,255,255,.22)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(247,166,16,.2)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(247,166,16,.4)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(21,34,56,.5)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(21,34,56,.25)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(255,255,255,.5)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(25,157,60,.14)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(25,157,60,.3)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(25,157,60,.16)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(0,0,0,.3)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(28,42,73,.2)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(255,255,255,.15)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(0,0,0,.22)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  rgba(0,0,0,.42)
+
+### radius — 16 distinct
+    98  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:81 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:17  14px
+    44  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:25 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:19  999px
+    29  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:23 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:6  12px
+    27  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:9 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:18  10px
+    23  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:20 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:3  26px
+    20  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:7 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:13  24px
+    19  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:4 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:15  11px
+    17  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:17 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  28px
+    15  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:10 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:5  22px
+    14  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:12 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2  16px
+     8  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:5  9px
+     6  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:4 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2  18px
+     4  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1  8px
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1  20px
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  5px
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  13px
+
+### shadow — 26 distinct
+    24  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:24 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 12px 32px rgba(28,42,73,.08)
+    17  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:17 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  0 10px 28px rgba(28,42,73,.07)
+     5  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:5 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 12px 32px rgba(28,42,73,.10)
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  0 30px 70px rgba(21,34,56,.3)
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 8px 24px rgba(28,42,73,.06)
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 30px 70px rgba(0,0,0,.4)
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  ${s.authMode ===
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 24px 50px rgba(0,0,0,.35)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 6px 18px rgba(28,42,73,.05)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 12px 32px rgba(28,42,73,.12)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 12px 30px rgba(28,42,73,.09)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 18px 38px rgba(28,42,73,.14)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 18px 40px rgba(232,70,141,.16)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 14px 36px rgba(28,42,73,.14)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 12px 32px rgba(28,42,73,.1)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 16px 40px rgba(28,42,73,.1)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  -18px 0 50px rgba(21,34,56,.25)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 12px 30px rgba(0,0,0,.3)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 12px 30px rgba(28,42,73,.2)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 20px 50px rgba(0,0,0,.25)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 8px 22px rgba(28,42,73,.06)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 12px 32px rgba(28,42,73,.09)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 0 8px rgba(0,0,0,.25)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 4px 12px rgba(0,0,0,.22)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  0 4px 14px rgba(28,42,73,.06)
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  0 14px 34px rgba(21,34,56,.3)
+
+### fontSize — 31 distinct
+   104  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:75 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:29  13.5px
+    80  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:62 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:18  13px
+    80  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:32 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:48  12.5px
+    61  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:50 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:11  14px
+    47  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:33 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:14  14.5px
+    46  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:40 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:6  15px
+    41  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:9 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:32  11.5px
+    39  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:26 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:13  12px
+    19  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:14 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:5  16px
+    17  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:16 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1  17px
+    17  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:15 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2  21px
+    16  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:12 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:4  11px
+    13  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:13 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  15.5px
+    13  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:11 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2  22px
+    13  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:12  30px
+    11  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:7 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:4  19px
+    11  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:5 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:6  20px
+     8  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:7 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1  18px
+     6  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:6 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  38px
+     6  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:6 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  26px
+     6  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:6 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  24px
+     6  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:6 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  34px
+     5  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:5 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  10px
+     4  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:4 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  25px
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  40px
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  27px
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1  28px
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  10.5px
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  32px
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  36px
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  31px
+
+### fontWeight — 3 distinct
+   344  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:213 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:131  800
+    84  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:63 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:21  700
+    11  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:11 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  600
+
+### letterSpacing — 6 distinct
+    23  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:20  .04em
+     4  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:4 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  .1em
+     2  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:2 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  .05em
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  -.01em
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  .14em
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  .005em
+
+### gap — 21 distinct
+    48  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:41 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:7  10px
+    34  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:23 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:11  8px
+    34  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:21 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:13  12px
+    26  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:24 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2  9px
+    22  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:8 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:14  14px
+    16  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:9 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:7  20px
+    14  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:11 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:3  16px
+    14  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:9 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:5  18px
+    13  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:8 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:5  7px
+    11  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:8 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:3  6px
+    10  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:5 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:5  11px
+     8  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:8 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  22px
+     7  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:5 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:2  5px
+     4  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1  26px
+     3  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:3 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  28px
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  24px
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  32px
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  40px
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:0  1px
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  3px
+     1  d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina Admin.dc.html:1 d:/Trabajo/Nina Canina/Nina Canina/design_handoff_nina_canina/Nina Canina.dc.html:0  4px

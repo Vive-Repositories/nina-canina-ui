@@ -1,0 +1,18 @@
+// src/tokens/tokens.scss
+@use 'colors';
+@use 'typography';
+@use 'space';
+
+:root {
+  // Shadows — neutral only, except --nc-shadow-featured (see below)
+  --nc-shadow-card: 0 12px 32px rgba(28, 42, 73, .08);        // 24, web
+  --nc-shadow-card-admin: 0 10px 28px rgba(28, 42, 73, .07);  // 17, admin
+  --nc-shadow-card-strong: 0 12px 32px rgba(28, 42, 73, .10); // 5, web
+  --nc-shadow-raised: 0 16px 40px rgba(28, 42, 73, .10);
+  --nc-shadow-soft: 0 8px 24px rgba(28, 42, 73, .06);
+  --nc-shadow-modal: 0 30px 70px rgba(21, 34, 56, .30);
+  --nc-shadow-drawer: -18px 0 50px rgba(21, 34, 56, .25);
+  --nc-shadow-dog: 0 22px 34px rgba(0, 0, 0, .42);            // drop-shadow filter
+  // Authorized exception: featured pricing card, Nina Canina.dc.html:406
+  --nc-shadow-featured: 0 18px 40px rgba(232, 70, 141, .16);
+}

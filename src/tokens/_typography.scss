@@ -1,0 +1,54 @@
+// src/tokens/_typography.scss
+// Sizes are the exact values found in the prototype, including the half-pixel
+// steps. Rounding them would change the design.
+:root {
+  --nc-font-display: 'Baloo 2', system-ui, sans-serif;
+  --nc-font-body: 'Nunito Sans', system-ui, sans-serif;
+
+  --nc-text-eyebrow: 11.5px; // 41
+  --nc-text-meta: 12.5px;    // 80
+  --nc-text-xs: 13px;        // 80
+  --nc-text-sm: 13.5px;      // 104
+  --nc-text-base: 14.5px;    // 47
+  --nc-text-md: 15.5px;      // 13
+  --nc-text-lg: 17px;        // 17
+  --nc-text-h4: 19px;        // 11
+  --nc-text-h3: 21px;        // 17
+  --nc-text-h2: 24px;        // 6
+  --nc-text-h1-admin: 30px;  // 13
+  --nc-text-h1: 38px;        // 6
+
+  --nc-weight-semibold: 600; // 11
+  --nc-weight-bold: 700;     // 84
+  --nc-weight-black: 800;    // 344
+
+  --nc-tracking-eyebrow: .04em; // 23
+  --nc-tracking-wide: .1em;     // 4
+  --nc-tracking-widest: .14em;  // 1, admin sidebar eyebrow
+}
+
+// Audit additions (Step 7, docs/token-audit.md): every font size from the
+// extraction report that clears the 3+ "is a token" threshold and is not
+// already a literal value in the block above. The rule is strict: 3+ uses is
+// a token, full stop — this package never consolidates a value into a nearby
+// token for being visually "close enough." That call belongs to design, not
+// to this extraction. Where two of these sit within 0.5-1px of an existing
+// token and look like prototype carelessness, both are kept as separate,
+// pixel-exact tokens; see the "candidatos a consolidación" note in the audit
+// doc for the specific pairs flagged for a design decision.
+:root {
+  --nc-text-admin-eyebrow: 10px; // 5, admin sidebar section labels (uppercase, tracking-wide/widest)
+  --nc-text-badge: 11px;        // 16, step captions, badge counts (close to --nc-text-eyebrow, 11.5px)
+  --nc-text-caption: 12px;      // 39, secondary/meta text, currency suffixes (close to --nc-text-meta, 12.5px)
+  --nc-text-dense: 14px;        // 61, admin form fields, step-circle numerals, compact card titles (close to --nc-text-base, 14.5px)
+  --nc-text-cta: 15px;          // 46, primary CTA button labels, hero paragraphs (close to --nc-text-md, 15.5px)
+  --nc-text-h5: 16px;           // 19, compact heading tier: process-step titles, sidebar footer headings, product name
+  --nc-text-h4-sm: 18px;        // 8, modal/panel subheadings (close to --nc-text-h4, 19px)
+  --nc-text-h4-lg: 20px;        // 11, admin h2 section headings (close to --nc-text-h4, 19px)
+  --nc-text-h3-lg: 22px;        // 13, larger h2/h3 heading variant (close to --nc-text-h3, 21px)
+  --nc-text-total: 25px;        // 4, cart total price emphasis + 1 heading (close to --nc-text-h2, 24px)
+  --nc-text-h2-lg: 26px;        // 6, larger h2/h3 variant
+  --nc-text-h2-xl: 27px;        // 3, page-level h2 headings (close to --nc-text-h2-lg, 26px)
+  --nc-text-h1-sm: 34px;        // 6, mid h1 tier between h1-admin and h1 (PDP name, store prices, promo banner)
+  --nc-text-h1-hero: 40px;      // 3, the two category-landing hero H1s (Aseo, Hotel)
+}

@@ -1,0 +1,60 @@
+// src/tokens/_space.scss
+:root {
+  --nc-space-1: 4px;
+  --nc-space-2: 6px;
+  --nc-space-3: 8px;
+  --nc-space-4: 10px;  // 48 gap usages, most common
+  --nc-space-5: 12px;  // 34
+  --nc-space-6: 14px;  // 22
+  --nc-space-7: 16px;  // 14
+  --nc-space-8: 18px;  // 14
+  --nc-space-9: 20px;  // 16
+  --nc-space-10: 22px; // 8
+  --nc-space-11: 26px; // 4
+  --nc-space-12: 30px;
+  --nc-space-13: 40px;
+  --nc-space-14: 46px;
+  --nc-space-15: 56px;
+
+  --nc-radius-xs: 9px;   // 8
+  --nc-radius-sm: 10px;  // 27
+  --nc-radius-md: 11px;  // 19
+  --nc-radius-lg: 12px;  // 29
+  --nc-radius-xl: 14px;  // 98, the default
+  --nc-radius-2xl: 16px; // 14
+  --nc-radius-3xl: 18px; // 6
+  --nc-radius-card: 22px;      // 15
+  --nc-radius-card-lg: 24px;   // 20
+  --nc-radius-card-xl: 26px;   // 23
+  --nc-radius-card-2xl: 28px;  // 17
+  --nc-radius-pill: 999px;     // 44
+
+  --nc-container: 1180px;
+  --nc-container-checkout: 940px;
+  --nc-container-portal: 880px;
+  --nc-container-account: 1040px;
+}
+
+// Audit additions (Step 7, docs/token-audit.md): radius and gap values from
+// the extraction report that clear the 3+ threshold but sit outside the
+// blocks above. The gap values (9/7/11/5/28px) all fall exactly midway
+// between two existing --nc-space-* rungs, which reads as a real half-step
+// pattern rather than one-sided drift, so they get their own tokens instead
+// of a coin-flip rounding. They are prefixed --nc-gap- (not --nc-space-)
+// because the extractor only ever found them in `gap:` declarations, unlike
+// the ranked scale above, and to avoid --nc-gap-5 / --nc-space-5 confusion.
+// See the audit doc for the per-value reasoning, including the values that
+// were folded into the blocks above instead.
+:root {
+  --nc-radius-2xs: 8px;      // 4, scrollbar thumb chrome + cart qty-stepper buttons
+  --nc-radius-card-sm: 20px; // 3, navy booking card, dashed contact box, admin notice box
+
+  --nc-gap-5px: 5px;   // 7
+  --nc-gap-7px: 7px;   // 13
+  --nc-gap-9px: 9px;   // 26, icon-to-label row gap, the single most common gap tail value
+  --nc-gap-11px: 11px; // 10
+  --nc-gap-28px: 28px; // 3
+
+  // Border width measured on prototype inputs and secondary buttons.
+  --nc-border-width: 1.5px; // 20 uses on inputs, 15 on secondary buttons
+}

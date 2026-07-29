@@ -1,0 +1,50 @@
+// src/atoms/Button/Button.module.scss
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--nc-space-3);
+  border: none;
+  font-family: var(--nc-font-body);
+  font-weight: var(--nc-weight-black);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+
+  &:disabled { opacity: .5; cursor: not-allowed; }
+  &:focus-visible { outline: 2px solid var(--nc-pink); outline-offset: 2px; }
+}
+
+.fullWidth { width: 100%; }
+
+// Every value measured from the prototype by co-occurrence: for each padding,
+// the font-size and radius that ship with it. Radius is per size, not shared.
+.sm { padding: 9px 15px; font-size: var(--nc-text-meta); border-radius: var(--nc-radius-md); }
+.md { padding: 11px 18px; font-size: var(--nc-text-sm); border-radius: var(--nc-radius-lg); }
+.lg { padding: 13px 22px; font-size: var(--nc-text-cta); border-radius: var(--nc-radius-xl); }
+
+// No colored glows in any state — removed deliberately per the handoff.
+.primary {
+  background: var(--nc-pink);
+  color: var(--nc-white);
+  &:hover:not(:disabled) { background: var(--nc-pink-dark); }
+}
+
+.secondary {
+  background: var(--nc-white);
+  color: var(--nc-fg);
+  border: var(--nc-border-width) solid var(--nc-border);
+  &:hover:not(:disabled) { background: var(--nc-bg); }
+}
+
+.ghost {
+  background: transparent;
+  color: var(--nc-fg-secondary);
+  &:hover:not(:disabled) { color: var(--nc-fg); }
+}
+
+.whatsapp {
+  background: var(--nc-green);
+  color: var(--nc-white);
+  &:hover:not(:disabled) { background: var(--nc-green-text); }
+}

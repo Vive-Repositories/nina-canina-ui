@@ -1,0 +1,10 @@
+.field { display: flex; flex-direction: column; gap: var(--nc-gap-7px); }
+
+.label {
+  font-size: var(--nc-text-xs);
+  font-weight: var(--nc-weight-black);
+  color: var(--nc-fg-tertiary);
+}
+
+.hint { font-size: var(--nc-text-meta); color: var(--nc-fg-muted); }
+.error { font-size: var(--nc-text-meta); color: var(--nc-pink-dark); font-weight: var(--nc-weight-bold); }
