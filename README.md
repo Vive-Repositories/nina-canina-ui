@@ -5,29 +5,25 @@ Design system de Niña Canina. Consumido por `nina-canina-web` y `nina-canina-ad
 ## Instalación
 
 ```bash
-npm i "git+https://github.com/Vive-Repositories/nina-canina-ui.git#v0.1.0"
+npm i github:Vive-Repositories/nina-canina-ui#v0.1.0
 ```
 
 El script `prepare` compila el paquete (`vite build`) al instalarlo. No hace
 falta publicar en un registry: npm clona el repo, corre `prepare` y deja
 `dist/` listo dentro de `node_modules/@nina/ui`.
 
-### En CI y en Coolify
+### Por qué este repo es público
 
-Este repo es **privado**, así que el contenedor de build necesita credenciales
-propias. El acceso de Coolify a la organización sirve para clonar el repo de la
-*aplicación*; el `npm install` corre dentro del contenedor, que no hereda nada
-de eso y falla al intentar traer esta dependencia.
+Los otros tres repos del proyecto son privados; este no, a propósito.
 
-Hace falta un PAT de grano fino (alcance solo este repo, `Contents: Read-only`)
-como variable de entorno **disponible en build time**, y esta reescritura antes
-del `npm install`:
+Siendo dependencia de las dos webs, cada `npm install` tendría que autenticarse
+contra GitHub desde dentro del contenedor de build, que no hereda el acceso del
+anfitrión. Eso exige un token en CI y en Coolify, con caducidad que gestionar.
 
-```bash
-git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
-```
-
-Así el token no queda en `package.json` ni en el lockfile.
+Y no compraría nada: los tokens y el CSS de este paquete viajan en
+`nina-ui.css` al navegador de cada visitante en cuanto el sitio sale a
+producción. Aquí no hay datos del negocio ni credenciales — eso vive en los
+repos privados.
 
 ## Uso
 
