@@ -1,6 +1,6 @@
 // src/atoms/Icon/Icon.tsx
 import type React from 'react'
-import { PATHS, type IconName } from './paths'
+import { ICONS, type IconName } from './icons'
 
 export interface IconProps extends Omit<React.SVGProps<SVGSVGElement>, 'name'> {
   name: IconName
@@ -27,7 +27,7 @@ export function Icon({ name, size = 20, strokeWidth = 2, title, ...rest }: IconP
       {...rest}
     >
       {title && <title>{title}</title>}
-      <path d={PATHS[name]} />
+      {ICONS[name]}
     </svg>
   )
 }

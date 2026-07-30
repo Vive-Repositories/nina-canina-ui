@@ -1,7 +1,25 @@
-import { Button, Field, Icon, Input, type ButtonVariant, type IconName } from '../src'
-import { PATHS } from '../src/atoms/Icon/paths'
+import {
+  Badge,
+  Button,
+  Card,
+  Field,
+  Icon,
+  Input,
+  Select,
+  type BadgeTone,
+  type ButtonVariant,
+  type CardElevation,
+  type CardRadius,
+  type IconName,
+} from '../src'
+import { ICONS } from '../src/atoms/Icon/icons'
 
-const VARIANTS: ButtonVariant[] = ['primary', 'secondary', 'ghost', 'whatsapp']
+const VARIANTS: ButtonVariant[] = ['primary', 'secondary', 'ghost', 'whatsapp', 'teal']
+// navy is excluded: it only exists as `solid` (see Badge.tsx), rendered
+// separately in the "solid" section below alongside pink.
+const BADGE_SOFT_TONES: Exclude<BadgeTone, 'navy'>[] = ['pink', 'teal', 'amber', 'green', 'violet']
+const CARD_RADII: CardRadius[] = ['md', 'lg', 'xl', '2xl']
+const CARD_ELEVATIONS: CardElevation[] = ['site', 'admin', 'strong', 'bordered', 'none']
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -36,8 +54,20 @@ export function App() {
         <Button disabled>Deshabilitado</Button>
       </Section>
 
+      <Section title="Button — como enlace (as=&quot;a&quot;)">
+        {/* Same look as a Button, but a real <a>: opens in a new tab, the URL
+            can be copied, and screen readers announce it as navigation, not
+            an action. Header/Footer's WhatsApp CTAs need exactly this. */}
+        <Button as="a" href="https://wa.me/528340000000" target="_blank" rel="noopener noreferrer" variant="whatsapp" iconLeft="whatsapp">
+          WhatsApp
+        </Button>
+        <Button as="a" href="/aseo" variant="secondary">
+          Ver servicios
+        </Button>
+      </Section>
+
       <Section title="Icon — sitio (stroke 2) vs admin (stroke 1.7)">
-        {(Object.keys(PATHS) as IconName[]).map((n) => (
+        {(Object.keys(ICONS) as IconName[]).map((n) => (
           <span key={n} style={{ display: 'grid', gap: 6, justifyItems: 'center', width: 84 }}>
             <span style={{ display: 'flex', gap: 10 }}>
               <Icon name={n} size={22} />
@@ -65,6 +95,85 @@ export function App() {
       <Section title="Input sobre navy">
         <div style={{ background: 'var(--nc-navy-deep)', padding: 24, borderRadius: 'var(--nc-radius-card-xl)', width: '100%' }}>
           <Input onNavy placeholder="Servicio" />
+        </div>
+      </Section>
+
+      <Section title="Badge — soft, los cinco tonos con tenue">
+        {BADGE_SOFT_TONES.map((tone) => (
+          <Badge key={tone} tone={tone}>{tone}</Badge>
+        ))}
+      </Section>
+
+      <Section title="Badge — solid (pink y navy, medidos del prototipo)">
+        <Badge variant="solid" tone="pink">pink</Badge>
+        <Badge variant="solid" tone="navy">navy</Badge>
+      </Section>
+
+      <Section title="Badge — count (burbuja de carrito: circular en 1 dígito, píldora en 2)">
+        <Badge variant="count">3</Badge>
+        <Badge variant="count">12</Badge>
+      </Section>
+
+      <Section title="Card — radios">
+        {CARD_RADII.map((radius) => (
+          <Card key={radius} radius={radius} elevation="bordered" style={{ width: 160, height: 90 }}>
+            {radius}
+          </Card>
+        ))}
+      </Section>
+
+      <Section title="Card — elevaciones (sitio .08 vs admin .07 vs strong .10)">
+        {CARD_ELEVATIONS.map((elevation) => (
+          <Card key={elevation} elevation={elevation} style={{ width: 160, height: 90 }}>
+            {elevation}
+          </Card>
+        ))}
+      </Section>
+
+      <Section title="Select — con Field, normal / inválido / deshabilitado">
+        <div style={{ display: 'grid', gap: 16, width: '100%', maxWidth: 360 }}>
+          <Field label="Servicio" htmlFor="svc">
+            <Select id="svc">
+              <option value="">Selecciona un servicio</option>
+              <option value="bano">Baño básico</option>
+              <option value="corte">Baño y corte</option>
+            </Select>
+          </Field>
+          <Field label="Servicio" htmlFor="svc-invalid" error="Elige un servicio">
+            <Select id="svc-invalid" invalid>
+              <option value="">Selecciona un servicio</option>
+              <option value="bano">Baño básico</option>
+            </Select>
+          </Field>
+          <Field label="Servicio" htmlFor="svc-disabled">
+            <Select id="svc-disabled" disabled>
+              <option value="">Selecciona un servicio</option>
+            </Select>
+          </Field>
+        </div>
+      </Section>
+
+      <Section title="Select — onNavy">
+        <div style={{ background: 'var(--nc-navy-deep)', padding: 24, borderRadius: 'var(--nc-radius-card-xl)', width: '100%' }}>
+          <Select onNavy defaultValue="">
+            <option value="" style={{ color: 'var(--nc-navy)' }}>Selecciona un servicio</option>
+            <option value="aseo" style={{ color: 'var(--nc-navy)' }}>Aseo canino</option>
+            <option value="hotel" style={{ color: 'var(--nc-navy)' }}>Hotel para perritos</option>
+          </Select>
+        </div>
+      </Section>
+
+      <Section title="Field — onNavy (tarjeta de reserva rápida del Hero)">
+        <div style={{ background: 'var(--nc-navy-deep)', padding: 24, borderRadius: 'var(--nc-radius-card-xl)', width: '100%', display: 'grid', gap: 16 }}>
+          <Field label="Servicio" htmlFor="hero-svc" onNavy>
+            <Select id="hero-svc" onNavy defaultValue="">
+              <option value="" style={{ color: 'var(--nc-navy)' }}>Selecciona un servicio</option>
+              <option value="aseo" style={{ color: 'var(--nc-navy)' }}>Aseo canino</option>
+            </Select>
+          </Field>
+          <Field label="Fecha" htmlFor="hero-date" onNavy>
+            <Input id="hero-date" type="date" onNavy />
+          </Field>
         </div>
       </Section>
     </main>

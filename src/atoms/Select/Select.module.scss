@@ -1,0 +1,46 @@
+// src/atoms/Select/Select.module.scss
+// Chevron SVG mirrors the one measured instance in the prototype
+// (Nina Canina.dc.html:118, the navy quick-booking card) byte-for-byte — a
+// data URI cannot read a var(--nc-*) custom property, so the color has to
+// be inlined here.
+$chevron-navy: '<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2214%22 height=%2214%22 fill=%22none%22><path d=%22M3 5l4 4 4-4%22 stroke=%22%239FB0CE%22 stroke-width=%222%22 stroke-linecap=%22round%22/></svg>';
+
+.select {
+  width: 100%;
+
+  // Measured on the admin light selects (Nina Canina Admin.dc.html:638, :720).
+  // Native appearance: only 2 of the prototype's 7 selects carry the
+  // `nc-select` class that suppresses it (both onNavy); the other 5,
+  // including this variant's own measured instances, keep the browser's
+  // default arrow. See .onNavy below for the suppressed one.
+  padding: 12px 15px;
+  border: var(--nc-border-width) solid var(--nc-border);
+  border-radius: var(--nc-radius-xl);
+  background: var(--nc-white);
+  font-size: var(--nc-text-dense);
+  font-family: inherit;
+  color: var(--nc-fg);
+  cursor: pointer;
+
+  &:focus { outline: none; border-color: var(--nc-pink); }
+  &:focus-visible { outline: 2px solid var(--nc-pink); outline-offset: 2px; }
+  &:disabled { background-color: var(--nc-bg); color: var(--nc-fg-muted); cursor: not-allowed; }
+}
+
+.invalid { border-color: var(--nc-pink-dark); }
+
+// Selects sitting on the navy quick-booking card — padding and arrow
+// position measured on Nina Canina.dc.html:118 and :125. This is the only
+// variant where the prototype replaces the native arrow (`class="nc-select"`
+// + `appearance: none` in its <style> block): the native arrow renders in
+// the OS's light/system color and would be unreadable against the dark navy
+// fill, so the prototype swaps in a light-colored custom one. The light
+// variant sits on white, where the native arrow already reads fine, so it
+// keeps it — this asymmetry is intentional, not a missed case.
+.onNavy {
+  padding: 13px 14px;
+  background: var(--nc-navy-mid) url('data:image/svg+xml;utf8,#{$chevron-navy}') no-repeat right 14px center;
+  appearance: none;
+  border-color: var(--nc-border-on-navy);
+  color: var(--nc-white);
+}

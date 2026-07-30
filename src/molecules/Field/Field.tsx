@@ -8,9 +8,11 @@ export interface FieldProps {
   error?: string
   hint?: string
   children: React.ReactNode
+  /** Variant for fields on the navy quick-booking card (Hero) — same pattern as Input/Select's own `onNavy`. */
+  onNavy?: boolean
 }
 
-export function Field({ label, htmlFor, error, hint, children }: FieldProps) {
+export function Field({ label, htmlFor, error, hint, children, onNavy }: FieldProps) {
   const messageId = error ? `${htmlFor}-error` : hint ? `${htmlFor}-hint` : undefined
 
   // Wire aria-describedby onto the control so callers cannot forget it.
@@ -20,8 +22,10 @@ export function Field({ label, htmlFor, error, hint, children }: FieldProps) {
       : child,
   )
 
+  const classes = [s.field, onNavy && s.onNavy].filter(Boolean).join(' ')
+
   return (
-    <div className={s.field}>
+    <div className={classes}>
       <label className={s.label} htmlFor={htmlFor}>{label}</label>
       {control}
       {error ? (

@@ -62,6 +62,12 @@
   // Translucent layers used on navy surfaces
   --nc-border-on-navy: rgb(255 255 255 / .12); // 11
   --nc-surface-on-navy: rgb(255 255 255 / .08); // 8
+  // Home page gap-fill (0b3-ds-gapfill): 3 more translucent-white tiers cleared
+  // the 3+ threshold once Header/Footer/Hero/HotelStore measured them. See
+  // docs/token-audit.md for the per-value usage breakdown.
+  --nc-border-on-navy-strong: rgb(255 255 255 / .16); // 3, web only
+  --nc-surface-on-navy-soft: rgb(255 255 255 / .06);  // 5 (3 web, 2 admin)
+  --nc-surface-on-navy-subtle: rgb(255 255 255 / .05); // 3, web only
 }
 
 // Audit additions (Step 6, docs/token-audit.md): tail colors from the

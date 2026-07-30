@@ -45,7 +45,58 @@ it('applies the variant class', () => {
   expect(screen.getByRole('button')).toHaveClass(s.secondary!)
 })
 
+it('applies the teal variant class (hotel area brand color)', () => {
+  render(<Button variant="teal">Reservar hotel</Button>)
+  expect(screen.getByRole('button')).toHaveClass(s.teal!)
+})
+
 it('applies the size class', () => {
   render(<Button size="lg">Continuar</Button>)
   expect(screen.getByRole('button')).toHaveClass(s.lg!)
+})
+
+describe('as="a"', () => {
+  it('renders a real <a> with its href, not a <button>', () => {
+    render(
+      <Button as="a" href="https://wa.me/528340000000">
+        WhatsApp
+      </Button>,
+    )
+    expect(screen.getByRole('link', { name: 'WhatsApp' })).toHaveAttribute(
+      'href',
+      'https://wa.me/528340000000',
+    )
+    expect(screen.queryByRole('button')).not.toBeInTheDocument()
+  })
+
+  it('still applies the variant and size classes', () => {
+    render(
+      <Button as="a" href="https://wa.me/528340000000" variant="whatsapp" size="lg">
+        WhatsApp
+      </Button>,
+    )
+    const link = screen.getByRole('link')
+    expect(link).toHaveClass(s.whatsapp!)
+    expect(link).toHaveClass(s.lg!)
+  })
+
+  it('forwards anchor-only attributes like target and rel', () => {
+    render(
+      <Button as="a" href="https://wa.me/528340000000" target="_blank" rel="noopener noreferrer">
+        WhatsApp
+      </Button>,
+    )
+    const link = screen.getByRole('link')
+    expect(link).toHaveAttribute('target', '_blank')
+    expect(link).toHaveAttribute('rel', 'noopener noreferrer')
+  })
+
+  it('does not add a type attribute (buttons default to type="button"; links never have one)', () => {
+    render(
+      <Button as="a" href="https://wa.me/528340000000">
+        WhatsApp
+      </Button>,
+    )
+    expect(screen.getByRole('link')).not.toHaveAttribute('type')
+  })
 })

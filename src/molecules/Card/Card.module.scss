@@ -1,0 +1,34 @@
+// src/molecules/Card/Card.module.scss
+.card {
+  display: block;
+  background: var(--nc-white);
+}
+
+// The four radii are real prototype values and already have tokens in
+// src/tokens/_space.scss: 26px is the default (19 uses).
+.radiusMd { border-radius: var(--nc-radius-card); }      // 22px, 10 uses
+.radiusLg { border-radius: var(--nc-radius-card-lg); }   // 24px, 18 uses
+.radiusXl { border-radius: var(--nc-radius-card-xl); }   // 26px, 19 uses, the default
+.radius2xl { border-radius: var(--nc-radius-card-2xl); } // 28px, 10 uses
+
+// Paddings observed in the prototype (28: 8 uses, 26: 6, 24: 6, 22: 4). No
+// spacing token lines up with 24/28, so these stay literal like Button's
+// per-size padding scale.
+.padding22 { padding: 22px; }
+.padding24 { padding: 24px; }
+.padding26 { padding: 26px; }
+.padding28 { padding: 28px; }
+
+// Site and admin have distinct elevations by design: .08 alpha on the public
+// site (24 uses), .07 on the admin panel (17 uses). Not a rounding drift.
+.site { box-shadow: var(--nc-shadow-card); }
+.admin { box-shadow: var(--nc-shadow-card-admin); }
+
+// Deeper shadow (.10 alpha) used by the home's service cards and the
+// Hotel/Tienda blocks (5 uses: 3 services + 2 feature blocks).
+.strong { box-shadow: var(--nc-shadow-card-strong); }
+
+// Shadow-free variant: a visible border instead (12 uses).
+.bordered { border: var(--nc-border-width) solid var(--nc-border); }
+
+// elevation="none" adds no class: base .card already carries no shadow.

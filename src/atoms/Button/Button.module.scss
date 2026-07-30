@@ -48,3 +48,14 @@
   color: var(--nc-white);
   &:hover:not(:disabled) { background: var(--nc-green-text); }
 }
+
+// Hotel area brand color. Measured 6x sitewide, all filled CTA-style buttons
+// (Nina Canina.dc.html:84,273,454,697,1158,1197) — none carries a
+// `style-hover` attribute, unlike e.g. the footer's social icons at :1004,
+// so no hover color was measured. Keeps the resting teal on hover rather
+// than inventing a darker shade by analogy with `primary`'s pink-dark hover.
+.teal {
+  background: var(--nc-teal);
+  color: var(--nc-white);
+  &:hover:not(:disabled) { background: var(--nc-teal); }
+}

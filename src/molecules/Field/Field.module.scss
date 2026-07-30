@@ -8,3 +8,20 @@
 
 .hint { font-size: var(--nc-text-meta); color: var(--nc-fg-muted); }
 .error { font-size: var(--nc-text-meta); color: var(--nc-pink-dark); font-weight: var(--nc-weight-bold); }
+
+// Fields on the navy quick-booking card (Hero). Label color measured
+// directly (Nina Canina.dc.html:117,124 — 3 uses of #C7D0E4 = --nc-on-navy
+// across the card's 3 labels: "Servicio", "Tamaño de tu perrito", "Fecha").
+// Hint has no measured instance in that card (no hint copy is shown there),
+// so it borrows --nc-on-navy-muted — the same card's own established
+// "secondary/muted" on-navy tone, already used 3x for the step captions and
+// the trust line — instead of inventing an unmeasured value. Error is left
+// unchanged: --nc-pink-dark is a saturated brand color, not one of the
+// light-surface-only tones this variant exists to fix, and pink is already
+// proven legible on this exact card (the active step-1 circle uses it at
+// full saturation) — folding it into the neutral --nc-on-navy-* family
+// would strip its error-signaling meaning without a measured reason to.
+.onNavy {
+  .label { color: var(--nc-on-navy); }
+  .hint { color: var(--nc-on-navy-muted); }
+}

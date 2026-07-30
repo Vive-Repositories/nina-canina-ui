@@ -226,3 +226,35 @@ there: 10px/48, 8px/34, 12px/34, 14px/22, 20px/16, 16px/14, 18px/14, 6px/11,
   `--nc-gap-28px`), **3 adjusted** to an existing token, **1 documented
   exception** (`1px`), **2 values that already equal an existing token**
   (`4px` → `--nc-space-1`, `40px` → `--nc-space-13`, no new decision needed).
+
+---
+
+# Phase 0B-3 — home page gap-fill: translucent white tail
+
+Building the home's Header, Footer, Hero and HotelStore sections against the
+DS surfaced three more `rgba(255,255,255,X)` values not covered by the
+existing on-navy pair (`--nc-border-on-navy` .12, `--nc-surface-on-navy` .08).
+Same rule as every table above: **3+ uses across both `.dc.html` prototypes is
+a token**, counted with the project's grep technique, not estimated.
+
+| Valor | Usos | Dónde | Decisión | Motivo |
+|---|---|---|---|---|
+| `rgba(255,255,255,.16)` | 3 (web) | Borde del botón de carrito del header (`Header.module.scss`); fondo del CTA "WhatsApp" de la banda del footer (`Footer.module.scss` `.ctaWhatsapp`); fondo condicional de un pill de estado en el portal del hotel (fuera de alcance de esta fase, `Nina Canina.dc.html:1801`) | tokenizar `--nc-border-on-navy-strong` | Verificado con grep en los dos `.dc.html` (3, ninguno en admin). Visualmente distinto de `--nc-border-on-navy` (.12): doble de opacidad, no aproximable sin perder contraste. Usado tanto como borde como fondo en sus 3 apariciones — el nombre sigue el que ya pidió el reporte de Header (primer consumidor real), pero es válido para cualquiera de los dos usos. |
+| `rgba(255,255,255,.06)` | 5 (3 web, 2 admin) | Fondo de los 3 íconos sociales del footer (Instagram/Facebook/TikTok, `.socialLink`); 2 usos equivalentes en superficies navy del admin | tokenizar `--nc-surface-on-navy-soft` | Verificado con grep en ambos archivos. Un peldaño por debajo de `--nc-surface-on-navy` (.08); distinto también de `.05` (ver fila siguiente), que es un peldaño más tenue todavía — ambos superan el umbral por separado, no se fusionan entre sí. |
+| `rgba(255,255,255,.05)` | 3 (web) | Fondo de los 3 chips de contacto del footer (teléfono, correo, dirección — `.contactLink`/`.contactRow`) | tokenizar `--nc-surface-on-navy-subtle` | Verificado con grep (3, ninguno en admin). Los tokens on-navy más cercanos están a .08/.12, un salto visualmente perceptible en una superficie tan grande como estos chips — no se aproximó. |
+
+Valores por debajo del umbral, auditados y dejados literales (no inventados,
+citados con su línea/contexto en los reportes de sección):
+
+| Valor | Usos | Dónde | Decisión |
+|---|---|---|---|
+| `rgba(255,255,255,.5)` | 1 (web) | Borde del CTA "WhatsApp" de la banda del footer, pareja del `.16` de fondo (botón "ghost sobre gradiente") | excepción — literal con comentario en `Footer.module.scss` |
+| `rgba(255,255,255,.92)` | 2 (web) | Texto de copy sobre la banda de gradiente rosa/ámbar del footer | excepción — literal con comentario, ningún token `--nc-on-navy-*` aplica (esa familia es para fondo navy, no gradiente) |
+
+## Summary
+
+- 3 new translucent-white values tokenized (`--nc-border-on-navy-strong`,
+  `--nc-surface-on-navy-soft`, `--nc-surface-on-navy-subtle`), added to
+  `_colors.scss` alongside the existing on-navy pair.
+- 2 documented exceptions below the 3-use threshold, left literal in the
+  section stylesheets that already use them.
