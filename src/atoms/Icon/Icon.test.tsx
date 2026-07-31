@@ -68,3 +68,39 @@ it('uses the --nc-white token, not a literal, for check-circle\'s contrasting st
   const path = screen.getByTestId('i').querySelector('path')
   expect(path).toHaveAttribute('stroke', 'var(--nc-white)')
 })
+
+it('renders the reusable single-use glyphs added for Aseo/Tienda/checkout', () => {
+  render(<Icon name="lock" data-testid="i" />)
+  const svg = screen.getByTestId('i')
+  // rect (body) + path (shackle)
+  expect(svg.children.length).toBeGreaterThan(1)
+})
+
+it('uses its own viewBox for a non-square icon instead of the 24x24 default', () => {
+  render(<Icon name="arrow-right-long" size={24} data-testid="i" />)
+  const svg = screen.getByTestId('i')
+  expect(svg).toHaveAttribute('viewBox', '0 0 24 14')
+  expect(svg.querySelector('path')).toHaveAttribute('d', 'M2 7h18m0 0l-5-5m5 5l-5 5')
+})
+
+it("derives height from the icon's own aspect ratio instead of forcing it square", () => {
+  render(<Icon name="arrow-right-long" size={24} data-testid="i" />)
+  const svg = screen.getByTestId('i')
+  expect(svg).toHaveAttribute('width', '24')
+  expect(svg).toHaveAttribute('height', '14') // 24 * (14/24), not 24
+})
+
+it("scales a non-square icon's height proportionally at other sizes, not just its viewBox size", () => {
+  render(<Icon name="arrow-right-long" size={48} data-testid="i" />)
+  const svg = screen.getByTestId('i')
+  expect(svg).toHaveAttribute('width', '48')
+  expect(svg).toHaveAttribute('height', '28') // 48 * (14/24)
+})
+
+it('keeps a square icon using size for both width and height, unaffected by ICON_VIEWBOX', () => {
+  render(<Icon name="cart" size={20} data-testid="i" />)
+  const svg = screen.getByTestId('i')
+  expect(svg).toHaveAttribute('viewBox', '0 0 24 24')
+  expect(svg).toHaveAttribute('width', '20')
+  expect(svg).toHaveAttribute('height', '20')
+})

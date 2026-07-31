@@ -224,6 +224,73 @@ export const ICONS = {
   // alone (line 242 HotelStore badge, 1 use). The detailed one wins,
   // 2 against 1, no tie to break.
   bed: <path d="M3 18v-5a3 3 0 013-3h12a3 3 0 013 3v5M3 14h18M3 18v2m18-2v2M7 10V8a2 2 0 012-2h2" />,
+
+  // Round 4 (0b3-ds-gapfill, package.json 0.2.1): 4 more glyphs the
+  // Aseo/Tienda/checkout areas drew inline. Each measures under the 3-use
+  // threshold in Nina Canina.dc.html, but all 4 are functional/brand glyphs
+  // tied to their own business area or flow (Aseo, Tienda, checkout) rather
+  // than decoration on one screen, so they clear the bar on the same
+  // "genuinely reusable" judgment already used for `account`/`mail`/
+  // `location`/the socials. What's decorative and stays OUT of the catalog
+  // (verified, not just asserted): the Hero star/swoosh/sparkle, the
+  // Hero trust-badge medal/crown/heart, the "2 owners" glyph in the
+  // booking-card header, the Testimonials drag handle and quote mark — none
+  // of those are reused across more than one screen's worth of context,
+  // they're single-section ornaments, and none of them entered.
+
+  // Scissors, single path. Measured 2x, not 1 (Hero CTA "Agendar estética"
+  // line 81; Servicios "Aseo canino" card icon line 151) — both identical.
+  scissors: <path d="M6 4l4 4m8-4l-4 4m0 0a4 4 0 11-4 4 4 4 0 014-4zm-2.8 6.8L4 20m15-9l-4.2 1.8" />,
+
+  // Bag: body + handle. Measured 2x, not 1 (Servicios "Tienda" card icon
+  // line 183; HotelStore "Tienda pet friendly" badge line 279) — both
+  // identical. Distinct from `cart`: no wheels, it's a closed shopping bag.
+  bag: (
+    <>
+      <path d="M6 8h12l-1 12H7L6 8z" />
+      <path d="M9 8V6a3 3 0 016 0v2" />
+    </>
+  ),
+
+  // Lock: body + shackle. Measured once (Hero booking card, "¡Rápido,
+  // fácil y 100% seguro!" trust line, line 134) — under threshold, kept as
+  // a genuinely reusable glyph: a payment-security signal belongs to the
+  // checkout flow generally, not just this one line of the Hero.
+  lock: (
+    <>
+      <rect x="5" y="11" width="14" height="9" rx="2" />
+      <path d="M8 11V8a4 4 0 018 0v3" />
+    </>
+  ),
+
+  // Long arrow: shaft + head, one path. Measured once (HotelStore "Ver más
+  // productos" link, line 296) — under threshold, kept as a reusable
+  // "see more" affordance likely to recur on any list-with-more pattern.
+  // Wide, short glyph by design (meant to sit inline next to text), not the
+  // 24×24 grid every other icon here assumes — verbatim geometry, unscaled;
+  // see `ICON_VIEWBOX` below for how `Icon.tsx` renders it undistorted.
+  'arrow-right-long': <path d="M2 7h18m0 0l-5-5m5 5l-5 5" />,
 } as const
 
 export type IconName = keyof typeof ICONS
+
+/**
+ * Icons whose artwork is not square in the prototype. Everything else uses the
+ * 24×24 default; forcing a non-square glyph into that box leaves dead space
+ * around it, and redrawing it to fit would mean inventing geometry.
+ *
+ * The prototype itself draws `arrow-right-long` at `width="20" height="14"`
+ * for this `viewBox="0 0 24 14"` (line 296) — that specific 20×14 pixel pair
+ * isn't the viewBox's exact ratio either (20/14 ≈ 1.43 vs 24/14 ≈ 1.71), just
+ * one hand-picked instance size. `Icon.tsx` doesn't hardcode that pair: it
+ * derives `height` from `size` and this viewBox's own aspect ratio, so the
+ * artwork stays undistorted at *any* requested `size`, not just 20.
+ *
+ * 24 of 25 icons are square today, so square stays the default and this is
+ * the explicit, narrow exception — not the other way around. Revisit that
+ * default if the catalog ever grows mostly non-square; with 1 of 25, it
+ * shouldn't.
+ */
+export const ICON_VIEWBOX: Partial<Record<IconName, string>> = {
+  'arrow-right-long': '0 0 24 14',
+}
