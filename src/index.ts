@@ -12,6 +12,7 @@ export {
   type ButtonSize,
 } from './atoms/Button/Button'
 export { Input, type InputProps } from './atoms/Input/Input'
+export { Textarea, type TextareaProps } from './atoms/Textarea/Textarea'
 export { Badge, type BadgeProps, type BadgeTone, type BadgeVariant } from './atoms/Badge/Badge'
 export { Select, type SelectProps } from './atoms/Select/Select'
 export { Field, type FieldProps } from './molecules/Field/Field'

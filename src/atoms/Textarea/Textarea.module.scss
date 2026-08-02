@@ -1,0 +1,47 @@
+// src/atoms/Textarea/Textarea.module.scss
+// Box model measured on the Contact form textarea (Nina Canina.dc.html:
+// `<textarea rows="5" style="padding: 13px 15px; border: 1.5px solid
+// #E6EAF2; border-radius: 14px; font-size: 14.5px; color: #152238; resize:
+// vertical;">`) — it matches Input's own tokens byte-for-byte (padding,
+// --nc-border-width, --nc-radius-xl, --nc-text-base, --nc-fg), so Textarea
+// reuses them rather than duplicating literals. `resize: vertical` is baked
+// in: both measured prototype instances (Contact + the admin pet-note field,
+// Nina Canina Admin.dc.html) agree on it. Height is left to the native
+// `rows` attribute, passed straight through like any other textarea prop —
+// no invented min-height.
+// The admin pet-note field measures tighter (padding 11px 14px, font-size
+// 13.5px = --nc-text-sm) than the Contact one. That is a single instance for
+// a screen this batch does not build (the admin daily-report field is future
+// work), so it is not promoted to a second size variant here — see
+// docs/token-audit.md / 0c-ds-lote-report.md for the measurement and the
+// reasoning. Revisit if/when that screen is actually implemented.
+.textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: var(--nc-border-width) solid var(--nc-border);
+  border-radius: var(--nc-radius-xl);
+  background: var(--nc-white);
+  font-family: inherit;
+  font-size: var(--nc-text-base);
+  color: var(--nc-fg);
+  resize: vertical;
+
+  &::placeholder { color: var(--nc-fg-faint); }
+  &:focus { outline: none; border-color: var(--nc-pink); }
+  &:focus-visible { outline: 2px solid var(--nc-pink); outline-offset: 2px; }
+  &:disabled { background: var(--nc-bg); color: var(--nc-fg-muted); cursor: not-allowed; resize: none; }
+}
+
+.invalid { border-color: var(--nc-pink-dark); }
+
+// Textarea on the navy quick-booking card. No measured prototype instance
+// (both real textareas sit on light surfaces) — added for API parity with
+// Input/Select's own `onNavy`, reusing their exact on-navy tokens rather
+// than inventing new values.
+.onNavy {
+  background: var(--nc-navy-mid);
+  border-color: var(--nc-border-on-navy);
+  color: var(--nc-white);
+
+  &::placeholder { color: var(--nc-on-navy-muted); }
+}

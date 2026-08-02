@@ -258,3 +258,59 @@ citados con su línea/contexto en los reportes de sección):
   `_colors.scss` alongside the existing on-navy pair.
 - 2 documented exceptions below the 3-use threshold, left literal in the
   section stylesheets that already use them.
+
+---
+
+# 0c-ds-lote — second translucent-white tail (gap batch)
+
+The five static screens built ad hoc off the prototype (0c-aseo, 0c-header,
+0c-hotel, 0c-promos, 0c-ubicacion-contacto) surfaced three more
+`rgba(255,255,255,X)` values that aren't in `_colors.scss` yet. Counted the
+same way as every table above — grep across **both full `.dc.html` files**,
+never a single screen — using `rgba\(\s*255,\s*255,\s*255\s*,\s*[.0-9]+\s*\)`
+over `Nina Canina.dc.html` and `Nina Canina Admin.dc.html`. All three values
+are web-only (0 admin hits).
+
+| Valor | Usos | Dónde | Decisión | Motivo |
+|---|---|---|---|---|
+| `rgba(255,255,255,.1)` | 8 (web) | Fondo de 2 badges/chips sobre tarjetas navy ("Foto diaria incluida" en la tarjeta del hotel, `:1801` chip de servicios del portal); fondo `:hover` de 2 chips de contacto del footer (teléfono, correo); borde de los 3 íconos sociales del footer (Instagram/Facebook/TikTok); borde superior (`border-top`) del separador de copyright del footer | tokenizar `--nc-border-on-navy-soft` | Usado en ambos roles casi por igual (4 fondo / 4 borde), pero de los 4 usos de fondo, 2 solo son visibles en `:hover` (no en la comparación estática); de los 4 usos de borde, los 4 son estado por defecto, siempre visibles. Con el mismo criterio ya usado para `#e8940a` ("es un hover, no visible en comparación estática") el rol dominante en estado estático es borde: 4 borde vs. 2 fondo estático. Numéricamente completa la escala de borde hacia abajo (`.1` < `--nc-border-on-navy` .12), igual que `--nc-surface-on-navy-soft`/`-subtle` completan la escala de fondo hacia abajo — de ahí el sufijo `-soft`. Válido también como fondo (mismo patrón dual que `--nc-border-on-navy-strong`, ya documentado arriba). |
+| `rgba(255,255,255,.18)` | 3 (web) | Línea conectora entre los círculos numerados del selector de pasos "Reserva en 3 pasos" (tarjeta navy del Hero, 2 usos) y del stepper del modal de reserva ("Agenda la cita de tu perrito", 1 uso) — `<div style="flex:1;height:2px;background:rgba(255,255,255,.18)">` | tokenizar `--nc-surface-on-navy-strong` | Rol 100% fondo, sin ambigüedad (los 3 usos son idénticos: barra conectora del stepper, ningún borde). Es el tono de fondo-sobre-navy más opaco medido — mayor incluso que `--nc-border-on-navy-strong` (.16) — así que extiende la escala de `surface-on-navy` hacia arriba (`subtle` .05 < `soft` .06 < base .08 < `strong` .18), reflejando el mismo sufijo `-strong` que ya usa la familia de borde. |
+| `rgba(255,255,255,.28)` | 3 (web) | Borde de los 3 íconos circulares de la fila de confianza del Hero ("Profesionales certificados", "Productos premium", "Ambiente seguro y feliz") — `border: 1.5px solid rgba(255,255,255,.28)` | tokenizar `--nc-border-on-navy-strongest` | Rol 100% borde, sin ambigüedad. Es el borde-sobre-navy más opaco medido en todo el sitio (casi el doble de `--nc-border-on-navy-strong`, .16), así que extiende la escala de borde un peldaño más arriba: `soft` .1 < base .12 < `strong` .16 < `strongest` .28. |
+
+Con estos tres, la escala completa de blanco translúcido sobre navy queda:
+
+- **Fondo (`surface-`)**: `-subtle` .05 → `-soft` .06 → base .08 → `-strong` .18
+- **Borde (`border-`)**: `-soft` .1 → base .12 → `-strong` .16 → `-strongest` .28
+
+## Valores por debajo del umbral — verificados, no tokenizados
+
+Los tintes translúcidos de color de marca sobre navy fueron contados con el
+mismo grep sobre los dos `.dc.html` completos y **ninguno llega a 3 usos**;
+se quedan como literales en las pantallas que los usan, sin token:
+
+| Valor | Usos | Nota |
+|---|---|---|
+| `rgba(232,70,141,.1)` (rosa) | 1 (web) | Por debajo del umbral |
+| `rgba(232,70,141,.16)` (rosa) | 2 (web) | Por debajo del umbral |
+| `rgba(17,182,199,.12)` (turquesa) | 2 (web) | Por debajo del umbral — la variante turquesa de `Button` ya se había rechazado antes por un conteo de alcance corto (2) cuando el real, sobre todo el prototipo, era 6; este valor específico sí se re-verificó completo y es 2 de verdad |
+| `rgba(247,166,16,.14)` (ámbar) | 1 (web) | Por debajo del umbral |
+| `rgba(247,166,16,.16)` (ámbar) | 2 (web) | Por debajo del umbral |
+| `rgba(247,166,16,.2)` (ámbar) | 1 (web) | Por debajo del umbral |
+| `rgba(247,166,16,.35)` (ámbar) | 1 (web) | Por debajo del umbral |
+| `rgba(247,166,16,.4)` (ámbar) | 1 (web) | Por debajo del umbral |
+| `rgba(25,157,60,.14)` (verde) | 1 (web) | Por debajo del umbral |
+| `rgba(25,157,60,.16)` (verde) | 1 (web) | Por debajo del umbral |
+| `rgba(25,157,60,.3)` (verde) | 1 (web) | Por debajo del umbral |
+
+Ninguno de estos se tokeniza "ya que estamos" — es exactamente la vía por la
+que la capa de tokens se llena de ruido con valores que nunca se van a
+reutilizar. Si un futuro batch de pantallas los empuja a 3+ usos reales, se
+tokenizan entonces, con su propio contexto de markup.
+
+## Summary
+
+- 3 new translucent-white values tokenized (`--nc-border-on-navy-soft`,
+  `--nc-surface-on-navy-strong`, `--nc-border-on-navy-strongest`), added to
+  `_colors.scss`'s existing on-navy translucent block.
+- 11 brand-color translucent tints checked, all below the 3-use threshold
+  (max 2), left as literals — no token added.

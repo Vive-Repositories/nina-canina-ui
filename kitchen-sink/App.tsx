@@ -6,6 +6,7 @@ import {
   Icon,
   Input,
   Select,
+  Textarea,
   type BadgeTone,
   type ButtonVariant,
   type CardElevation,
@@ -95,6 +96,51 @@ export function App() {
       <Section title="Input sobre navy">
         <div style={{ background: 'var(--nc-navy-deep)', padding: 24, borderRadius: 'var(--nc-radius-card-xl)', width: '100%' }}>
           <Input onNavy placeholder="Servicio" />
+        </div>
+      </Section>
+
+      <Section title="Field y Textarea">
+        <div style={{ display: 'grid', gap: 16, width: '100%', maxWidth: 360 }}>
+          <Field label="Mensaje" htmlFor="msg" hint="Cuéntanos qué necesitas">
+            <Textarea id="msg" rows={5} placeholder="Hola, quisiera saber…" />
+          </Field>
+          <Field label="Mensaje" htmlFor="msg-invalid" error="Escribe un mensaje">
+            <Textarea id="msg-invalid" invalid rows={3} />
+          </Field>
+          <Field label="Nota" htmlFor="msg-disabled">
+            <Textarea id="msg-disabled" disabled rows={3} placeholder="Deshabilitado" />
+          </Field>
+        </div>
+      </Section>
+
+      <Section title="Textarea sobre navy">
+        <div style={{ background: 'var(--nc-navy-deep)', padding: 24, borderRadius: 'var(--nc-radius-card-xl)', width: '100%' }}>
+          <Textarea onNavy rows={4} placeholder="Escribe aquí…" />
+        </div>
+      </Section>
+
+      <Section title="Blanco translúcido sobre navy — tokens nuevos (0c-ds-lote)">
+        <div style={{ background: 'var(--nc-navy-deep)', padding: 24, borderRadius: 'var(--nc-radius-card-xl)', width: '100%', display: 'flex', gap: 20, flexWrap: 'wrap' }}>
+          {[
+            { name: '--nc-border-on-navy-soft', role: 'border' as const, note: '.1 · 8 usos' },
+            { name: '--nc-surface-on-navy-strong', role: 'surface' as const, note: '.18 · 3 usos' },
+            { name: '--nc-border-on-navy-strongest', role: 'border' as const, note: '.28 · 3 usos' },
+          ].map((t) => (
+            <div key={t.name} style={{ display: 'grid', gap: 8, justifyItems: 'center', width: 160 }}>
+              <div
+                style={{
+                  width: 96,
+                  height: 56,
+                  borderRadius: 12,
+                  background: t.role === 'surface' ? `var(${t.name})` : 'transparent',
+                  border: t.role === 'border' ? `2px solid var(${t.name})` : '1px solid transparent',
+                }}
+              />
+              <small style={{ color: 'var(--nc-on-navy)', fontSize: 'var(--nc-text-meta)', textAlign: 'center' }}>
+                {t.name}<br />{t.note}
+              </small>
+            </div>
+          ))}
         </div>
       </Section>
 

@@ -68,6 +68,13 @@
   --nc-border-on-navy-strong: rgb(255 255 255 / .16); // 3, web only
   --nc-surface-on-navy-soft: rgb(255 255 255 / .06);  // 5 (3 web, 2 admin)
   --nc-surface-on-navy-subtle: rgb(255 255 255 / .05); // 3, web only
+
+  // 0c-ds-lote: 3 more translucent-white tiers cleared the 3+ threshold,
+  // counted across both full .dc.html prototypes (not per-screen). See
+  // docs/token-audit.md for the per-value usage breakdown and role.
+  --nc-border-on-navy-soft: rgb(255 255 255 / .1);       // 8, web only
+  --nc-surface-on-navy-strong: rgb(255 255 255 / .18);   // 3, web only
+  --nc-border-on-navy-strongest: rgb(255 255 255 / .28); // 3, web only
 }
 
 // Audit additions (Step 6, docs/token-audit.md): tail colors from the
