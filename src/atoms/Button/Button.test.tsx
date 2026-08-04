@@ -55,6 +55,35 @@ it('applies the size class', () => {
   expect(screen.getByRole('button')).toHaveClass(s.lg!)
 })
 
+it('applies the advance variant class (the citas/pedidos "next state" pill)', () => {
+  render(<Button variant="advance">En proceso</Button>)
+  expect(screen.getByRole('button')).toHaveClass(s.advance!)
+})
+
+it('still applies a size class alongside advance, even though advance overrides its box', () => {
+  render(
+    <Button variant="advance" size="sm">
+      En proceso
+    </Button>,
+  )
+  const button = screen.getByRole('button')
+  expect(button).toHaveClass(s.advance!)
+  expect(button).toHaveClass(s.sm!)
+})
+
+it('disables the advance pill like any other button', async () => {
+  const onClick = vi.fn()
+  render(
+    <Button variant="advance" disabled onClick={onClick}>
+      Cerrado
+    </Button>,
+  )
+  const button = screen.getByRole('button')
+  expect(button).toBeDisabled()
+  await userEvent.click(button)
+  expect(onClick).not.toHaveBeenCalled()
+})
+
 describe('as="a"', () => {
   it('renders a real <a> with its href, not a <button>', () => {
     render(

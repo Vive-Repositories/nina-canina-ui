@@ -1,0 +1,37 @@
+// src/molecules/Modal/Modal.module.scss
+// Nina Canina Admin.dc.html:738-824 — the 3 centered modals share this
+// exact shell (radius/padding/shadow/z-index), only width differs. See
+// docs/token-audit.md, "DS consolidation round — admin gap-fill", for the
+// --nc-backdrop token and why width stays a component prop instead.
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: var(--nc-backdrop);
+  z-index: 300;
+}
+
+.panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 92vh;
+  overflow-y: auto;
+  background: var(--nc-white);
+  border-radius: var(--nc-radius-card-xl); // 26px
+  padding: 28px; // literal — no --nc-space-* value lands on 28, same precedent as Card's own padding scale
+  z-index: 301;
+  box-shadow: var(--nc-shadow-modal);
+
+  // Focused programmatically on open (see useFocusTrap), not via keyboard
+  // navigation onto a control — a visible ring around the whole panel here
+  // would read as a stray box, not a real focus indicator.
+  &:focus {
+    outline: none;
+  }
+}
+
+.width450 { width: min(450px, 94vw); } // Invitar empleado
+.width470 { width: min(470px, 94vw); } // Nueva cita
+.width480 { width: min(480px, 94vw); } // Detalle de cobro — the default

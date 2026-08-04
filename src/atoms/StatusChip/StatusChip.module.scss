@@ -1,0 +1,45 @@
+// src/atoms/StatusChip/StatusChip.module.scss
+// Nina Canina Admin.dc.html:1048-1057 (`chip()`) — see StatusChip.tsx's
+// doc comment for why this isn't Badge.
+
+.chip {
+  display: inline-block;
+  font-size: var(--nc-text-eyebrow); // 11.5px
+  font-weight: var(--nc-weight-black);
+  padding: var(--nc-space-2) var(--nc-space-5); // 6px 12px
+  border-radius: var(--nc-radius-pill);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.amber {
+  background: var(--nc-amber-bg);
+  color: var(--nc-amber-dark);
+}
+
+.teal {
+  background: var(--nc-teal-bg);
+  color: var(--nc-teal-dark);
+}
+
+.violet {
+  background: var(--nc-violet-bg);
+  color: var(--nc-violet);
+}
+
+.green {
+  background: var(--nc-green-bg);
+  color: var(--nc-green-text);
+}
+
+// Darker than Badge's pink/soft text (--nc-pink) — chip()'s pink states
+// ("Cancelada"/"Nuevo") always use --nc-pink-dark. See StatusChip.tsx.
+.pink {
+  background: var(--nc-pink-bg);
+  color: var(--nc-pink-dark);
+}
+
+.neutral {
+  background: var(--nc-border-softer);
+  color: var(--nc-fg-secondary);
+}

@@ -1,0 +1,19 @@
+// src/atoms/ProgressBar/ProgressBar.module.scss
+// Ported from ProductImageUploadModal.module.scss's .progressTrack/.progressFill
+// (nina-canina-admin) — see ProgressBar.tsx's doc comment.
+
+.track {
+  border-radius: var(--nc-radius-pill);
+  background: var(--nc-border-softer);
+  overflow: hidden;
+}
+
+.height7 { height: 7px; }
+.height8 { height: 8px; }
+
+.fill {
+  height: 100%;
+  background: var(--nc-pink);
+  border-radius: var(--nc-radius-pill);
+  transition: width 0.15s ease-out;
+}

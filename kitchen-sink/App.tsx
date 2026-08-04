@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {
   Badge,
   Button,
@@ -5,13 +6,17 @@ import {
   Field,
   Icon,
   Input,
+  Modal,
+  ProgressBar,
   Select,
+  StatusChip,
   Textarea,
   type BadgeTone,
   type ButtonVariant,
   type CardElevation,
   type CardRadius,
   type IconName,
+  type StatusChipTone,
 } from '../src'
 import { ICONS } from '../src/atoms/Icon/icons'
 
@@ -21,6 +26,7 @@ const VARIANTS: ButtonVariant[] = ['primary', 'secondary', 'ghost', 'whatsapp', 
 const BADGE_SOFT_TONES: Exclude<BadgeTone, 'navy'>[] = ['pink', 'teal', 'amber', 'green', 'violet']
 const CARD_RADII: CardRadius[] = ['md', 'lg', 'xl', '2xl']
 const CARD_ELEVATIONS: CardElevation[] = ['site', 'admin', 'strong', 'bordered', 'none']
+const STATUS_CHIP_TONES: StatusChipTone[] = ['amber', 'teal', 'violet', 'green', 'pink', 'neutral']
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -34,6 +40,10 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 export function App() {
+  const [modalWidth, setModalWidth] = useState<450 | 470 | 480>(480)
+  const [modalOpen, setModalOpen] = useState(false)
+  const [uploadPct, setUploadPct] = useState(42)
+
   return (
     <main style={{ maxWidth: 900, margin: '0 auto', padding: 40 }}>
       <h1 style={{ fontSize: 'var(--nc-text-h1)', marginBottom: 32 }}>Design system</h1>
@@ -221,6 +231,64 @@ export function App() {
             <Input id="hero-date" type="date" onNavy />
           </Field>
         </div>
+      </Section>
+
+      <Section title="Button — advance (pill &quot;avanzar&quot; de Citas/Pedidos)">
+        <Button variant="advance">En proceso</Button>
+        <Button variant="advance" disabled>
+          Cerrado
+        </Button>
+      </Section>
+
+      <Section title="StatusChip — los 6 tonos medidos de chip()">
+        {STATUS_CHIP_TONES.map((tone) => (
+          <StatusChip key={tone} tone={tone}>
+            {tone}
+          </StatusChip>
+        ))}
+      </Section>
+
+      <Section title="ProgressBar — subida de imágenes">
+        <div style={{ display: 'grid', gap: 16, width: '100%', maxWidth: 320 }}>
+          <ProgressBar value={uploadPct} label="Subiendo foto" />
+          <div style={{ display: 'flex', gap: 8 }}>
+            <Button size="sm" variant="secondary" onClick={() => setUploadPct((p) => Math.max(0, p - 10))}>
+              -10
+            </Button>
+            <Button size="sm" variant="secondary" onClick={() => setUploadPct((p) => Math.min(100, p + 10))}>
+              +10
+            </Button>
+          </div>
+          <ProgressBar value={70} height={7} label="Servicios de la semana (7px)" />
+        </div>
+      </Section>
+
+      <Section title="Modal — overlay accesible (foco atrapado, Escape, foco devuelto)">
+        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+          {([450, 470, 480] as const).map((w) => (
+            <Button
+              key={w}
+              variant="secondary"
+              onClick={() => {
+                setModalWidth(w)
+                setModalOpen(true)
+              }}
+            >
+              Abrir a {w}px
+            </Button>
+          ))}
+        </div>
+        <Modal open={modalOpen} onClose={() => setModalOpen(false)} label="Detalle de cobro y extras" width={modalWidth}>
+          <h3 style={{ fontFamily: 'var(--nc-font-display)', fontSize: 'var(--nc-text-h3)', margin: '0 0 12px' }}>
+            Modal de ejemplo ({modalWidth}px)
+          </h3>
+          <p style={{ color: 'var(--nc-fg-secondary)', margin: '0 0 20px' }}>
+            Prueba Tab/Shift+Tab (el foco no sale del panel) y Escape (cierra y devuelve el foco al botón que lo abrió).
+          </p>
+          <Button variant="primary" fullWidth onClick={() => setModalOpen(false)}>
+            Listo
+          </Button>
+        </Modal>
       </Section>
     </main>
   )

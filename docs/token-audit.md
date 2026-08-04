@@ -314,3 +314,39 @@ tokenizan entonces, con su propio contexto de markup.
   `_colors.scss`'s existing on-navy translucent block.
 - 11 brand-color translucent tints checked, all below the 3-use threshold
   (max 2), left as literals — no token added.
+
+---
+
+# DS consolidation round — admin gap-fill (Modal backdrop, modal width)
+
+Building `Modal` (the accessible overlay the admin had to hand-roll per
+screen — `AppointmentDetailModal.tsx`, `ProductImageUploadModal.tsx`, both
+in `nina-canina-admin`) surfaced one color that now clears the 3+ threshold
+and one dimension that deliberately stays below it.
+
+| Valor | Usos | Dónde | Decisión | Motivo |
+|---|---|---|---|---|
+| `rgba(21,34,56,.55)` | 3 (admin) | Backdrop de los 3 modales centrados del admin: Nueva cita (`Nina Canina Admin.dc.html:738`), Detalle de cobro (`:769`), Invitar empleado (`:823`) | tokenizar `--nc-backdrop` | Verificado con grep exacto en ambos `.dc.html` (3, 0 en web). Los 3 modales del admin comparten backdrop/panel idénticos salvo el ancho (ver fila siguiente) — el propio `AppointmentDetailModal.module.scss`/`ProductImageUploadModal.module.scss` ya documentaban este valor como "sin token a esta alfa" porque ningún componente lo consumía todavía; ahora que `Modal` sí, se tokeniza. **Distinto** de `AdminShell.module.scss`'s `.backdrop` (`rgba(11,20,38,.55)`, el overlay del sidebar móvil): color base diferente (11,20,38 vs 21,34,56) y 1 solo uso — se queda literal ahí, no se fusiona con este token nuevo. |
+
+**Ancho de modal — auditado, no tokenizado.** Los 3 modales centrados del
+admin comparten exactamente el mismo shell (`border-radius:26px;
+padding:28px; box-shadow:0 30px 70px rgba(21,34,56,.3); z-index:301`) pero
+cada uno con un ancho `min(Npx, 94vw)` distinto: Nueva cita 470px (`:739`),
+Detalle de cobro 480px (`:770`), Invitar empleado 450px (`:824`) — 1 uso
+cada uno, ninguno cruza el umbral de 3+ como valor exacto. En vez de elegir
+uno y descartar los otros dos (o promediarlos, que sería inventar un cuarto
+valor que no está en el markup), `Modal`'s `width` prop expone los 3 como
+una unión literal (`450 | 470 | 480`), mismo patrón ya establecido por
+`Card`'s `CardPadding` (`22 | 24 | 26 | 28`, también todos por debajo del
+umbral individualmente, todos expuestos como prop en vez de tokenizados).
+Documentado en `Modal.tsx`/`Modal.module.scss`, no aquí, siguiendo el mismo
+precedente de `Card` (los tamaños de padding de `Card` tampoco están en
+este archivo). Default: 480px, el único de los 3 con un consumidor real
+hoy (`AppointmentDetailModal`).
+
+## Summary
+
+- 1 new color tokenized (`--nc-backdrop`), added to `_colors.scss`.
+- 3 modal widths audited, none tokenized (all below 3+ threshold as exact
+  pixel values) — exposed as `Modal`'s `width` prop instead, documented at
+  the component.

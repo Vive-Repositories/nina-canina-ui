@@ -111,10 +111,11 @@ motivo. Ninguna consolidación de color pasa sin quedar anotada ahí.
 
 ## Componentes disponibles
 
-`Button`, `Field`, `Icon`, `Input`. El resto del inventario (Select,
-Textarea, Checkbox, Toggle, Badge, Pill, Avatar, Price, Card, StatCard, Tabs,
-Chip, SearchInput, QuantityStepper, EmptyState, Modal, Drawer, DataTable,
-Stepper) llega en un plan siguiente.
+`Button`, `Badge`, `Card`, `Field`, `Icon`, `Input`, `Modal`, `ProgressBar`,
+`Select`, `StatusChip`, `Textarea`. El resto del inventario (Checkbox,
+Toggle, Pill, Avatar, Price, StatCard, Tabs, Chip, SearchInput,
+QuantityStepper, EmptyState, Drawer, DataTable, Stepper) llega en un plan
+siguiente.
 
 ## Desarrollo
 

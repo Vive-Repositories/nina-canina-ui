@@ -95,3 +95,16 @@
   --nc-fg-disabled: #b6bcc8;       // 1, disabled day-selector chip text
   --nc-amber-border-strong: #f0c97a; // 1, unassigned-carer warning border (paired with --nc-amber-bg-soft)
 }
+
+// DS consolidation round (Modal): rgba(21,34,56,.55) is the backdrop behind
+// all 3 of the admin's centered modals (Nueva cita, Detalle de cobro,
+// Invitar empleado — Nina Canina Admin.dc.html:738,769,823), 3 uses, clears
+// the 3+ threshold. Previously left literal in the admin's own hand-built
+// modals (each commented "no --nc-* token at this alpha") because no
+// component consumed it yet; now that Modal does, it's tokenized. See
+// docs/token-audit.md for the full note, including why this is distinct
+// from AdminShell's own mobile-sidebar backdrop (rgba(11,20,38,.55), a
+// different value, single use, stays literal there).
+:root {
+  --nc-backdrop: rgba(21, 34, 56, 0.55); // 3, admin — centered-modal backdrop
+}

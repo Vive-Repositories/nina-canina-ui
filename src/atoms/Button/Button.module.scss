@@ -59,3 +59,32 @@
   color: var(--nc-white);
   &:hover:not(:disabled) { background: var(--nc-teal); }
 }
+
+// "Avanzar" pill — Nina Canina Admin.dc.html:1059-1071 (`advanceBtn`). Own
+// fixed box (padding 9px 13px, font-size 12.5px, radius 10px), not any of
+// .sm/.md/.lg — see Button.tsx's doc comment on `advance` for the
+// measurements that don't line up with `sm`. Declared after .sm/.md/.lg so
+// this box wins the cascade regardless of which `size` a caller passes —
+// same "one class ignores the other dimension" precedent as Badge's
+// `count` variant, which ignores `tone`. `flex: 1` from the prototype is
+// deliberately NOT copied here: growing to fill a flex row is the calling
+// layout's decision (e.g. the actions cell in a table row), not this
+// button's own visual identity — same reasoning Card uses to keep one-off
+// layout concerns out of its own props ("override via className/style").
+.advance {
+  padding: 9px 13px;
+  font-size: var(--nc-text-meta); // 12.5px
+  border-radius: var(--nc-radius-sm); // 10px
+  background: var(--nc-fg);
+  color: var(--nc-white);
+
+  &:disabled {
+    background: var(--nc-border-softer);
+    color: var(--nc-fg-muted);
+
+    // The prototype's "closed" state is its own solid color pair, not a
+    // washed-out one — override .button's generic :disabled{opacity:.5}.
+    opacity: 1;
+    cursor: default;
+  }
+}

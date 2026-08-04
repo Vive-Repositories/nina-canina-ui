@@ -104,3 +104,33 @@ it('keeps a square icon using size for both width and height, unaffected by ICON
   expect(svg).toHaveAttribute('width', '20')
   expect(svg).toHaveAttribute('height', '20')
 })
+
+it('renders the admin sidebar gap-fill icons added for the DS consolidation round', () => {
+  render(<Icon name="grid" data-testid="i" />)
+  const svg = screen.getByTestId('i')
+  // 4 rounded squares
+  expect(svg.children.length).toBe(4)
+})
+
+it('reuses bed for Hotel instead of a duplicate icon (not in the sidebar gap-fill round)', () => {
+  render(<Icon name="bed" data-testid="i" />)
+  expect(screen.getByTestId('i').querySelector('path')).toHaveAttribute(
+    'd',
+    'M3 18v-5a3 3 0 013-3h12a3 3 0 013 3v5M3 14h18M3 18v2m18-2v2M7 10V8a2 2 0 012-2h2',
+  )
+})
+
+it("keeps the tag icon's punch-hole filled without inheriting the wrapper's stroke", () => {
+  render(<Icon name="tag" data-testid="i" />)
+  const circle = screen.getByTestId('i').querySelector('circle')
+  expect(circle).toHaveAttribute('fill', 'currentColor')
+  expect(circle).toHaveAttribute('stroke', 'none')
+})
+
+it('renders team and people as two distinct icons, not one shared "two-person" glyph', () => {
+  render(<Icon name="team" data-testid="team" />)
+  render(<Icon name="people" data-testid="people" />)
+  const team = screen.getByTestId('team').innerHTML
+  const people = screen.getByTestId('people').innerHTML
+  expect(team).not.toBe(people)
+})

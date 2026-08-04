@@ -270,6 +270,106 @@ export const ICONS = {
   // 24×24 grid every other icon here assumes — verbatim geometry, unscaled;
   // see `ICON_VIEWBOX` below for how `Icon.tsx` renders it undistorted.
   'arrow-right-long': <path d="M2 7h18m0 0l-5-5m5 5l-5 5" />,
+
+  // Sidebar gap-fill (DS consolidation round): the admin's own sidebar nav
+  // (Nina Canina Admin.dc.html:57-121) draws 7 glyphs this catalog didn't
+  // have yet — Resumen/Pedidos/Tarifas/Productos/Empleados/Clientes/
+  // Bitácora. All measured directly from those nav buttons (stroke-width
+  // 1.7 there, same runtime `strokeWidth` prop `Icon.tsx` already exposes,
+  // not baked into the geometry below).
+  //
+  // Two nav icons are deliberately NOT part of this round: `calendar`
+  // (Citas) and `paw` (Mascotas) already exist and were reused as-is by the
+  // admin skeleton — re-measured here against this same nav while auditing
+  // the other 7, and both have a small discrepancy worth flagging (not
+  // fixed here — out of this round's scope, see the consolidation report):
+  // `calendar`'s divider is `M3 9h18` (measured from the *web* prototype);
+  // the admin nav draws it one unit lower, `M3 10h18`. `paw` is a filled
+  // single path (web prototype); the admin nav's Mascotas icon is a
+  // stroke-only glyph with different pad radii — same concept, different
+  // rendering style, not a pixel match.
+  //
+  // Hotel is also NOT a new icon here: its nav glyph (:71, "M3 19v-6a3 3 0
+  // 013-3h12a3 3 0 013 3v6M3 15h18M3 19v2m18-2v2M7 10V8a2 2 0 012-2h2") is
+  // the same bed-frame concept as `bed` above — 1 unit taller (frame height
+  // 6 vs 5, baseline y19 vs y18) but with the identical headboard segment
+  // ("M7 10V8a2 2 0 012-2h2", verbatim in both) — reads as drift between
+  // the two .dc.html files, not a deliberate second icon. `bed` is reused
+  // for Hotel instead of duplicating it, per the encargo's own "si ya
+  // existe con otro nombre, no lo dupliques" rule.
+
+  // Resumen nav — 4 rounded squares. Measured once (:60), under the 3-use
+  // threshold, kept as a reusable dashboard/grid affordance (same
+  // "genuinely reusable interface glyph" call as `account`/`mail`).
+  grid: (
+    <>
+      <rect x="3" y="3" width="7.5" height="7.5" rx="2" />
+      <rect x="13.5" y="3" width="7.5" height="7.5" rx="2" />
+      <rect x="3" y="13.5" width="7.5" height="7.5" rx="2" />
+      <rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2" />
+    </>
+  ),
+
+  // Pedidos nav — closed box, isometric outline. Measured 2x, not 1 (:79
+  // sidebar nav; :171 the Resumen dashboard's own "Pedidos abiertos" KPI
+  // icon draws the identical two paths).
+  box: (
+    <>
+      <path d="M3.5 7.5L12 3.5l8.5 4v9L12 20.5l-8.5-4v-9z" />
+      <path d="M3.5 7.5L12 11.5l8.5-4M12 11.5v9" />
+    </>
+  ),
+
+  // Tarifas nav — a literal dollar sign (vertical stroke + S-curve), not a
+  // price-tag shape despite the task/nav framing being about pricing.
+  // Measured once (:85), kept as a reusable currency/pricing glyph.
+  price: (
+    <>
+      <path d="M12 3v18" />
+      <path d="M16 7.5c0-1.7-1.8-2.5-4-2.5s-4 .8-4 2.5S9.8 10 12 10s4 .9 4 2.8-1.8 2.7-4 2.7-4-.9-4-2.7" />
+    </>
+  ),
+
+  // Productos nav — a price/gift tag (hexagonal outline + punch-hole).
+  // Measured once (:91). The punch-hole is filled — same reason every
+  // other filled shape in this file sets stroke="none" explicitly instead
+  // of inheriting the wrapper's stroke="currentColor" (see `check-circle`'s
+  // comment above).
+  tag: (
+    <>
+      <path d="M4 9.5l5.5-5.5H19a1 1 0 011 1v9.5L14.5 20a1.4 1.4 0 01-2 0L4 11.5a1.4 1.4 0 010-2z" />
+      <circle cx="15.5" cy="8.5" r="1.4" fill="currentColor" stroke="none" />
+    </>
+  ),
+
+  // Empleados nav — 2 feet/circles crossed by 2 diagonals, an abstract
+  // "team" mark distinct from `people` below. Measured once (:99).
+  team: (
+    <>
+      <circle cx="6" cy="18" r="2.6" />
+      <circle cx="18" cy="18" r="2.6" />
+      <path d="M7.6 16L18 4M16.4 16L6 4" />
+    </>
+  ),
+
+  // Clientes nav — one full person + a second, partial one. Measured once
+  // (:111). Distinct from the single-person `account` above (different
+  // radii/position, plus the second figure) — not a duplicate.
+  people: (
+    <>
+      <circle cx="9.5" cy="8.5" r="3.4" />
+      <path d="M3 20c0-3.3 2.9-5.6 6.5-5.6S16 16.7 16 20" />
+      <path d="M16.5 5.4a3.2 3.2 0 010 6.2M18 14.8c2 .7 3 2.4 3 5.2" />
+    </>
+  ),
+
+  // Bitácora nav — clock face. Measured once (:117).
+  clock: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7.5V12l3 2" />
+    </>
+  ),
 } as const
 
 export type IconName = keyof typeof ICONS
